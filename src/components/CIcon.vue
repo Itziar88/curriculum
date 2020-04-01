@@ -1,5 +1,5 @@
 <template>
-    <i 
+    <i
         class="CIcon"
         :class="iconClass"
         :style="iconStyles"
@@ -21,7 +21,7 @@ export default {
     props: {
         icon: VueTypes.string.isRequired,
         color: VueTypes.oneOf(colors).def('black'),
-        size: VueTypes.number.def(0),
+        size: VueTypes.number,
     },
     computed: {
         iconClass () {
@@ -43,6 +43,7 @@ export default {
 @import '@/theme/theme.scss';
 
 .CIcon {
+    vertical-align: middle;
     &.white {
         color: $white;
     }

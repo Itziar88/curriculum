@@ -1,68 +1,29 @@
 <template>
   <div id="app" class="Container">
-    <CText typo="p" weight="bold">CText</CText>
-    <CText typo="p" weight="medium">CText</CText>
-    <CText typo="p" weight="semi">CText</CText>
-    <CText typo="p" weight="light">CText</CText>
-    <Section title="Section"></Section>
-    <CIcon icon="git"/>
-    <CIcon icon="css"/>
-    <CIcon icon="html"/>
-    <CIcon icon="php"/>
-    <CIcon icon="java"/>
-    <CIcon icon="javascript"/>
-    <CIcon icon="nuxt"/>
-    <CIcon icon="vue"/>
-    <CIcon icon="phone"/>
-    <CIcon icon="linkedin"/>
-    <CIcon icon="mail"/>
-    <CIcon icon="github"/>
-    <InlineItem :text="InlineItem.text" :iconItem="InlineItem.iconItem"></InlineItem>
-    <Item v-bind="Item"></Item>
-    <Language name="Español" level="Nativo" :percentage="20"></Language>
+    <Sidebar 
+      :contact="cv.contact"
+      :technologies="cv.technologies"
+      :languages="cv.languages"
+    ></Sidebar>
+    <div class="Body">body</div>
   </div>
 </template>
 
 <script>
+import { default as cv } from './cv'
+
 import {
-  CText,
-  Section,
-  CIcon,
-  InlineItem,
-  Item,
-  Language,
-} from './components'
+  Sidebar,
+} from './sections'
 
 export default {
   name: 'App',
   components: {
-    CText,
-    Section,
-    CIcon,
-    InlineItem,
-    Item,
-    Language,
+    Sidebar,
   },
   data () {
     return {
-      InlineItem: {
-        iconItem: {
-          icon: 'github',
-          size: 20,
-          color: 'primary',
-        },
-        text: 'Github',
-      },
-      Item: {
-        title: 'Desarrollador web',
-        center: 'Waavi Studio',
-        startDate: 'Marzo 2019',
-        endDate: 'Marzo 2020',
-        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lacinia sapien vel risus
-                      rutrum feugiat. Donec fermentum magna est, quis placerat neque interdum quis. Mauris quis
-                      dolor vitae justo imperdiet tempor id sed augue. Ut aliquet tincidunt tempus. In a auctor
-                      justo, quis accumsan quam. Cras pellentesque scelerisque dictum.`,
-      }
+      cv,
     }
   }
 }
@@ -72,11 +33,17 @@ export default {
 @import '@/theme/theme.scss';
 
 .Container {
+  display: flex;
   position: relative;
-  padding: $spacer;
-  margin-right: auto;
-  margin-left: auto;
   width: 100%;
   box-sizing: border-box;
+
+  .Sidebar {
+    flex: 1 1 33%;
+  }
+  .Body {
+    flex: 1 1 66%;
+    background-color: aliceblue;
+  }
 }
 </style>

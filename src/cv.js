@@ -1,24 +1,31 @@
 export default {
-    cv: {
         name: 'Itziar Puebla Guardia',
         job: 'Desarrollador web',
         contact: [
             {
-                iconItem: 'telephone',
+                iconItem: {
+                    icon: 'phone',
+                },
                 text: 650479939,
             },
             {
-                iconItem: 'email',
+                iconItem: {
+                    icon: 'mail',
+                },
                 text: 'itziarpuebla@gmail.com',
             },
             {
-                iconItem: 'linkedin',
+                iconItem: {
+                    icon: 'linkedin',
+                },
                 text: 'Itziar',
             },
             {
-                iconItem: 'github',
+                iconItem: {
+                    icon: 'github',
+                },
                 text: 'Itziar88',
-            }
+            },
         ],
         languages: [
             {
@@ -34,27 +41,39 @@ export default {
         ],
         technologies: [
             {
-                iconItem: 'vue',
+                iconItem: {
+                    icon: 'vue',
+                },
                 text: 'VueJs',
             },
             {
-                iconItem: 'javascript',
+                iconItem: {
+                    icon: 'javascript',
+                },
                 text: 'JavaScript',
             },
             {
-                iconItem: 'git',
+                iconItem: {
+                    icon: 'git',
+                },
                 text: 'Git',
             },
             {
-                iconItem: 'nuxt',
+                iconItem: {
+                    icon: 'nuxt',
+                },
                 text: 'NuxtJs',
             },
             {
-                iconItem: 'html',
+                iconItem: {
+                    icon: 'html',
+                },
                 text: 'HTML5',
             },
             {
-                iconItem: 'css',
+                iconItem: {
+                    icon: 'css',
+                },
                 text: 'CSS3',
             },
         ],
@@ -114,4 +133,3 @@ export default {
             }
         ]
     }
-}
