@@ -2,11 +2,11 @@ $font-path: '~@/assets/fonts/icomoon/';
 
 @font-face {
 	font-family: 'icomoon';
-	src: url($font-path+'icomoon.eot?hwd0md');
-	src: url($font-path+'icomoon.eot?hwd0md#iefix') format('embedded-opentype'),
-		url($font-path+'icomoon.ttf?hwd0md') format('truetype'),
-		url($font-path+'icomoon.woff?hwd0md') format('woff'),
-		url($font-path+'icomoon.svg?hwd0md#icomoon') format('svg');
+	src: url($font-path+'icomoon.eot?n7rhzp');
+	src: url($font-path+'icomoon.eot?n7rhzp#iefix') format('embedded-opentype'),
+		url($font-path+'icomoon.ttf?n7rhzp') format('truetype'),
+		url($font-path+'icomoon.woff?n7rhzp') format('woff'),
+		url($font-path+'icomoon.svg?n7rhzp#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 	font-display: block;
@@ -54,6 +54,9 @@ $font-path: '~@/assets/fonts/icomoon/';
 }
 .icon-phone:before {
 	content: '\e909';
+}
+.icon-envelope:before {
+	content: '\e908';
 }
 .icon-linkedin:before {
 	content: '\e90a';
