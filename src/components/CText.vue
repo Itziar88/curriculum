@@ -27,7 +27,7 @@ export default {
       "grey04",
       ""
     ]).optional,
-    align: VueTypes.oneOf(["left", "center", "right", ""]).def("left"),
+    align: VueTypes.oneOf(["left", "center", "right", "justify", ""]).def("left"),
     size: VueTypes.oneOf([...fontSizes, ...fontSizes.map(String)]).optional,
     weight: VueTypes.oneOf(["light", "medium", "semi", "bold", ""]).def(""),
     capitalize: VueTypes.bool.def(false),
@@ -62,7 +62,7 @@ export default {
 
 .CText {
   &.p {
-    color: $grey-01;
+    color: $black;
     font-family: $font-family-sans-serif;
     font-size: $font-size;
     font-weight: $font-weight-normal;
@@ -70,7 +70,7 @@ export default {
   }
 
   &.span {
-    color: $grey-01;
+    color: $black;
     font-family: $font-family-sans-serif;
     font-size: $font-size;
     font-weight: $font-weight-normal;
@@ -91,26 +91,22 @@ export default {
   }
 
   &.h1 {
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 26px;
   }
   &.h2 {
-    font-size: 18px;
+    font-size: 22px;
   }
   &.h3 {
-    font-size: 16px;
-    line-height: 15px;
+    font-size: 20px;
   }
   &.h4 {
-    font-size: 14px;
+    font-size: 18px;
   }
   &.h5 {
-    font-size: 12px;
-    letter-spacing: 1px;
+    font-size: 14px;
   }
   &.h6 {
-    letter-spacing: 1px;
-    font-size: 10px;
+    font-size: 13px;
   }
 
   &.p,
@@ -192,6 +188,9 @@ export default {
   }
   &.right {
     text-align: right;
+  }
+  &.justify {
+    text-align: justify;
   }
 
   // Other styling
