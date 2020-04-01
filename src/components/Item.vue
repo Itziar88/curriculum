@@ -9,7 +9,7 @@
                 <CText typo="h5">{{ endDate }}</CText>
             </div>
         </div>
-        <CText align="justify">{{ description }}</CText>
+        <CText v-if="description" align="justify">{{ description }}</CText>
     </div>
 </template>
 

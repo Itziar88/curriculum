@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="Container">
     <CText typo="p" weight="bold">CText</CText>
     <CText typo="p" weight="medium">CText</CText>
     <CText typo="p" weight="semi">CText</CText>
@@ -19,6 +19,7 @@
     <CIcon icon="github"/>
     <InlineItem :text="InlineItem.text" :iconItem="InlineItem.iconItem"></InlineItem>
     <Item v-bind="Item"></Item>
+    <Language name="Español" level="Nativo" :percentage="20"></Language>
   </div>
 </template>
 
@@ -29,6 +30,7 @@ import {
   CIcon,
   InlineItem,
   Item,
+  Language,
 } from './components'
 
 export default {
@@ -39,6 +41,7 @@ export default {
     CIcon,
     InlineItem,
     Item,
+    Language,
   },
   data () {
     return {
@@ -65,3 +68,15 @@ export default {
 }
 </script>
 
+<style lang="scss" scoped>
+@import '@/theme/theme.scss';
+
+.Container {
+  position: relative;
+  padding: $spacer;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+</style>
