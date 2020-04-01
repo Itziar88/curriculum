@@ -21,7 +21,7 @@ export default {
             color: VueTypes.string,
             size: VueTypes.number,
         }),
-        text: VueTypes.string,
+        text: VueTypes.oneOfType([VueTypes.string, VueTypes.number]),
     }
 }
 </script>
