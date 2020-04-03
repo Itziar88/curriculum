@@ -1,6 +1,7 @@
 export default {
         name: 'Itziar Puebla Guardia',
         job: 'Desarrollador web',
+        image: '@/assets/foto.jpg',
         contact: [
             {
                 iconItem: {
@@ -18,7 +19,7 @@ export default {
                 iconItem: {
                     icon: 'linkedin',
                 },
-                text: 'Itziar',
+                text: 'Itziar Puebla',
             },
             {
                 iconItem: {
@@ -79,7 +80,7 @@ export default {
         ],
         experience: [
             {
-                name: 'Desarrolladora Front-end',
+                title: 'Desarrolladora Front-end',
                 center: 'Waavi Studio',
                 startDate: 'Marzo 2019',
                 endDate: 'Marzo 2020',
@@ -88,7 +89,7 @@ export default {
                     la creación de tests unitarios con Jest para componentes.`,
             },
             {
-                name: 'Redactora de contenidos',
+                title: 'Redactora de contenidos',
                 center: 'Bluecell',
                 startDate: 'Febrero 2012',
                 endDate: 'Febrero 2013',
@@ -96,7 +97,7 @@ export default {
                     sector de lujo, ecología o televisión.`,
             },
             {
-                name: 'Profesora De Inglés',
+                title: 'Profesora De Inglés',
                 center: 'Smiles Language School',
                 startDate: 'Septiembre 2016',
                 endDate: 'Junio 2019',
@@ -104,8 +105,8 @@ export default {
                     de Infantil hasta educación de adultos.`,
             },
             {
-                name: 'Profesora De Inglés',
-                center: 'Euler',
+                title: 'Profesora De Inglés',
+                center: 'Academia Euler',
                 startDate: 'Diciembre 2015',
                 endDate: 'Septiembre 2016',
                 description: `Trabajos correspondientes a la docencia de alumnos en Inglés desde 3º 
@@ -114,19 +115,19 @@ export default {
         ],
         studies: [
             {
-                name: 'Grado Periodismo',
+                title: 'Grado Periodismo',
                 center: 'Universidad Rey Juan Carlos',
                 startDate: '2008',
                 endDate: '2012',
             },
             {
-                name: 'Máster Periodismo Cultural y Nuevas Tecnologías',
+                title: 'Máster Periodismo Cultural',
                 center: 'Universidad Rey Juan Carlos',
                 startDate: '2012',
                 endDate: '2013',
             },
             {
-                name: 'Técnico Superior Desarrollo de Aplicaciones Web',
+                title: 'Téc. Superior Desarrollo de Aplicaciones Web',
                 center: 'IES Laguna de Joatzel',
                 startDate: '2017',
                 endDate: '2019',

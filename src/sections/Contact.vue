@@ -43,6 +43,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .Item {
     padding: 10px 0 0 5px;
 }

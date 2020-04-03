@@ -33,7 +33,7 @@ export default {
     display: flex;
     align-items: center;
     .CIcon {
-        margin-right: 5px;
+        margin-right: 10px;
     }
 }
 </style>

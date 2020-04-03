@@ -5,7 +5,7 @@
             weight="medium"
             uppercase
         >
-            Languages
+            Idiomas
         </CText>
         <div
             v-for="(item, index) in info"

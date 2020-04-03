@@ -1,7 +1,6 @@
 <template>
     <div class="ProgressBar">
         <div class="Wrapper" :style="{ width: `${percentage}%`}">
-
         </div>
     </div>
 </template>

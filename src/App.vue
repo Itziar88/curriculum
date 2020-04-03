@@ -1,11 +1,16 @@
 <template>
   <div id="app" class="Container">
-    <Sidebar 
+    <Sidebar
+      :name="cv.name"
+      :job="cv.job"
       :contact="cv.contact"
       :technologies="cv.technologies"
       :languages="cv.languages"
-    ></Sidebar>
-    <div class="Body">body</div>
+    />
+    <div class="Body">
+      <Experience :experiences="cv.experience" />
+      <Education :studies="cv.studies" />
+    </div>
   </div>
 </template>
 
@@ -14,12 +19,16 @@ import { default as cv } from './cv'
 
 import {
   Sidebar,
+  Experience,
+  Education,
 } from './sections'
 
 export default {
   name: 'App',
   components: {
     Sidebar,
+    Experience,
+    Education,
   },
   data () {
     return {
@@ -35,15 +44,26 @@ export default {
 .Container {
   display: flex;
   position: relative;
-  width: 100%;
   box-sizing: border-box;
+  min-height: calc(100vh);
+  @media print {
+    -webkit-print-color-adjust: exact;
+    height: calc(100vh);
+  }
+
+  .Sidebar,
+  .Body {
+    padding: $spacer * 2 $spacer;
+  }
 
   .Sidebar {
-    flex: 1 1 33%;
+    flex: 1 1 25%;
   }
   .Body {
-    flex: 1 1 66%;
-    background-color: aliceblue;
+    flex: 1 1 75%;
+    .Education {
+      margin-top: $spacer * 2;
+    }
   }
 }
 </style>

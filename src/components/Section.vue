@@ -31,6 +31,7 @@ export default {
 .Section {
     padding-bottom: 5px;
     position: relative;
+    margin-bottom: $spacer;
     &::after {
         content: '';
         position: absolute;
