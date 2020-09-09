@@ -15,31 +15,27 @@
 </template>
 
 <script>
-import { default as cv } from './cv'
+import { default as cv } from "./cv";
 
-import {
-  Sidebar,
-  Experience,
-  Education,
-} from './sections'
+import { Sidebar, Experience, Education } from "./sections";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Sidebar,
     Experience,
-    Education,
+    Education
   },
-  data () {
+  data() {
     return {
       cv,
-    }
-  }
-}
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-@import '@/theme/theme.scss';
+@import "@/theme/theme.scss";
 
 .Container {
   display: flex;

@@ -81,6 +81,14 @@ export default {
         experience: [
             {
                 title: 'Desarrolladora Front-end',
+                center: 'Sipay Plus',
+                startDate: 'Junio 2020',
+                endDate: 'Actualmente',
+                description: `Desarrollo de aplicaciones web en el ámbito de las fintech. Utilización de VueJs, JavaScript, 
+                    HTML, CSS y Git.`,
+            },
+            {
+                title: 'Desarrolladora Front-end',
                 center: 'Waavi Studio',
                 startDate: 'Marzo 2019',
                 endDate: 'Marzo 2020',
