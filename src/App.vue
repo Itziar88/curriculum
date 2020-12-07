@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import { default as cv } from "./cv";
+import { default as cv } from "./cv_en";
 
 import { Sidebar, Experience, Education } from "./sections";
 
@@ -28,9 +28,9 @@ export default {
   },
   data() {
     return {
-      cv,
+      cv
     };
-  },
+  }
 };
 </script>
 

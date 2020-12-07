@@ -1,7 +1,7 @@
 <template>
     <i
         class="CIcon"
-        :class="iconClass"
+        :class="fontAwesome || iconClass"
         :style="iconStyles"
     />
 </template>
@@ -22,6 +22,7 @@ export default {
         icon: VueTypes.string.isRequired,
         color: VueTypes.oneOf(colors).def('black'),
         size: VueTypes.number,
+        fontAwesome: VueTypes.bool.def(false),
     },
     computed: {
         iconClass () {
